@@ -1,5 +1,5 @@
-import webapp2
 from com.prashanth.datamodels.UserData import UserData
+import webapp2
 
 class StoreData(webapp2.RequestHandler):
     def post(self):        
@@ -22,11 +22,9 @@ class TestDatabaseSamplePage(webapp2.RequestHandler):
        
         <div><input type="submit" value="Submit"></div>
         
-        
         </form>
         </body></html>
         """)
-        
 
 
 app = webapp2.WSGIApplication([('/', TestDatabaseSamplePage), ('/store', StoreData)],debug=True)

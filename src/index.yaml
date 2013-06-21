@@ -1,0 +1,7 @@
+indexes:
+
+- kind: MovieDetails
+  properties:
+  - name: movieName
+  - name: movieYear
+    direction: asc
